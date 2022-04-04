@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+</head>
+<body>
+    <script>
+
+        //9- Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação).O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos.
+           
+        let n1 = parseInt(prompt("Insira o primeiro número: "))
+        let n2 = parseInt(prompt("Insira o segundo número: "))
+        let opcao = parseInt(prompt("Insira uma opcão, lembrando que 1 é adicao, 2 é subtracao, 3 é multiplicacao e 4 é divisao"))
+        let resultado = null
+        switch(opcao){
+            case 1:
+                resultado = n1 + n2
+                window.alert("O resultado da operação é: " + resultado)
+            break
+
+            case 2:
+                resultado = n1 - n2
+                window.alert("O resultado da operação é: " + resultado)
+            break
+
+            case 3:
+                resultado = n1 * n2
+                window.alert("O resultado da operação é: " + resultado)
+            break
+
+            case 4:
+                resultado = n1 / n2
+                window.alert("O resultado da operação é: " + resultado)
+            break
+
+        }
+    </script>
+</body>
+</html>

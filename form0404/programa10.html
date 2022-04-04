@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <script>
+
+            /*10 - Escreva um programa para ler o número de lados de um polígono regular e a medida do lado (em cm).
+            Calcular e exibir o seguinte: Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor do seu perímetro. Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área. Se o número de lados for igual a 5 escrever PENTÁGONO. Observação: Considere que o usuário só informará os valores 3, 4 ou 5. Caso o número de lados seja inferior a 3 escrever NÃO É UM POLÍGONO. Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO.*/
+
+        let n1 = parseInt(prompt("Insira o numero de lados do poligono: "))
+        let n2 = parseFloat(prompt("Insira a medida dos lados do poligono: "))
+        let perimetro = null
+        if(n1 < 3){
+            window.alert("Não é um poligono")
+        }else if(n1 == 3){
+            perimetro = n2*n1
+            window.alert("O poligono é um triangulo com perimetro de " + perimetro)
+        }else if(n1 == 4){
+            perimetro = n2*n2
+            window.alert("O poligono é um quadrado com area de " + perimetro)
+        }else if(n1 == 5){
+            window.alert("O poligono é um pentagono")
+        }else{
+            window.alert("Poligono não identificado")
+        }
+    </script>
+</body>
+</html>
